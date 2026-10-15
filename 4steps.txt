@@ -1,0 +1,53 @@
+Run these commands in Kali Linux Terminal to compile and execute Program 4.
+
+1\. Create the C file
+
+```
+nano buffer.c
+```
+
+Paste the C code, then save using `Ctrl + O` → `Enter` → `Ctrl + X`.
+
+2\. Compile the program
+
+```
+gcc -g -o buffer buffer.c
+```
+
+3\. Run the program
+
+```
+./buffer
+```
+
+4\. Test with the correct password
+
+```
+thegeekstuff
+```
+
+Expected output:
+
+```
+Correct Password
+Root privileges given to the user
+```
+
+5\. Run again with an incorrect password
+
+```
+./buffer
+```
+
+Enter:
+
+```
+hello
+```
+
+Expected output:
+
+```
+Wrong Password
+No root privileges are granted.
+```
